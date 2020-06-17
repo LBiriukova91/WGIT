@@ -231,7 +231,6 @@ font-weight: 700;
 }
 .card__item {
   width: 380px;
-  
 }
 .card__inner{
   height: 380px;
@@ -555,4 +554,54 @@ text-align: center;
   font-size: 15px;
   font-style: italic;
   font-weight: 300;
+}
+
+/*Clients*/
+
+.clients {
+  display: flex;
+}
+.clients__item {
+  flex: 1 1 0;
+  padding-left: 85px;
+  padding-right: 35px;
+  position: relative;
+}
+.clients__photo {
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  z-index: 1;
+}
+.clients__name {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.clients__prof {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+}
+.clients__prof::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: red;
+  display: block;
+  margin: 50px auto;
+ }
+ .clients__text {
+ color: gray;
+ font-size: 14px;
+}
+.section--clients {
+  background: url(../image/clients-bg.jpg) center no-repeat;
+  background-size: cover;
+  padding-bottom: 0;
+  margin-bottom: 40px;
+}
+.section__suptitle {
+  font-size: 20px;
+  color: black;
+  font-family: 'Kaushan Script', cursive;
 }
